@@ -1463,6 +1463,14 @@
           "type": "boolean",
           "description": "Whether to enable auto-scaler"
         },
+        "maxUpgradeSurge": {
+          "type": "string",
+          "description": "Maximum number or percent of nodes to surge in for upgrades. Default 1. (Az cli will default to maxCount if enableAutoScaling?)"
+        },
+        "maxUpgradeUnavailable": {
+          "type": "string",
+          "description": "Maximum number or percent of nodes to render unavailable at one time for upgrades. Default 0"
+        },
         "type": {
           "$ref": "#/definitions/AgentPoolType",
           "description": "AgentPoolType represents types of an agent pool"
